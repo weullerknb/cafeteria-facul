@@ -37,11 +37,6 @@ html {
     align-items: center;
 }
 
-.logo h3 {
-    color: white;
-    font-size: 1.6rem;
-}
-
 .logo img {
     width: 100%;
     height: 100%;
@@ -122,4 +117,88 @@ html {
     background-color: black;
     border: 1px solid #d3a27f;
     color: #d3a27f;
+}
+
+/* Sobre nós */
+
+.sobre-nos {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(./img/sobre01.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-nos .contentsobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-nos h2 {
+    color: rgb(177, 177, 177);
+    font-size: 6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.sobre-nos p {
+    text-align: center;
+    width: 700px;
+    color: rgb(177, 177, 177);
+    font-size: 2rem;
+    font-weight: 400;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+/* Entre em contato */
+
+.entre-contato {
+    background-color: #d3a27f;
+    width: 100%;
+    padding-bottom: 5rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.entre-contato img {
+    width: 400px;
+    height: 400px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    border: 2px solid black;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentcontato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentcontato h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contentcontato p {
+    text-align: center;
+    font-size: 2rem;
+    width: 700px;
 }
