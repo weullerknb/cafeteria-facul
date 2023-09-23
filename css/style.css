@@ -296,3 +296,39 @@ html {
     background-color: black;
     color: white;
 }
+
+/* Pagina cadastro */
+
+.cadastro {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #d3a27f;
+}
+
+.cadastro .box, form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.box h1 {
+    margin-top: 100px;
+    text-transform: uppercase;
+}
+
+.box form input {
+    width: 250px;
+    height: 25px;
+    border-radius: 10px;
+    padding: 0 15px 0 15px;
+}
+
+.box form button {
+    width: 150px;
+    height: 25px;
+}
