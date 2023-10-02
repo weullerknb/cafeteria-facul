@@ -16,8 +16,6 @@ html {
     overflow-x: hidden;
 }
 
-/* Menu */
-
 .content {
     width: 100vw;
     height: 70px;
@@ -64,12 +62,10 @@ html {
     color: #d3a27f;
 }
 
-/*Pagina principal*/
-
-.first-section {
+.sobre-nos {
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(/img/fundoCafeteria.jpg);
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(/img/sobre01.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -80,79 +76,70 @@ html {
     align-items: center;
 }
 
-.first-section .conteudo-principal {
+.sobre-nos .contentsobre {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.first-section h1 {
-    color: #967c00;
+.sobre-nos h2 {
+    color: rgb(177, 177, 177);
     font-size: 6rem;
+    font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
 
-.first-section h2 {
+.sobre-nos p {
+    text-align: center;
+    width: 700px;
     color: rgb(177, 177, 177);
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 400;
-    text-transform: uppercase;
-    margin-bottom: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
-.btn button {
-    width: 230px;
-    height: 60px;
-    cursor: pointer;
-    text-transform: uppercase;
-    background-color: #4b280a;
-    border-radius: 10px;
-    color: white;
-    font-weight: 700;
-    margin-top: 2rem;
-    transition: all 400ms ease-in;
-}
+/* Entre em contato */
 
-.btn button:hover {
-    background-color: black;
-    border: 1px solid #d3a27f;
-    color: #d3a27f;
-}
-
-/*
-.cadastro {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.entre-contato {
     background-color: #d3a27f;
+    width: 100%;
+    padding-bottom: 5rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.cadastro .box, form {
+.entre-contato img {
+    width: 400px;
+    height: 400px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    border: 2px solid black;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentcontato {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
 }
 
-.box h1 {
-    margin-top: 100px;
-    text-transform: uppercase;
+.contentcontato h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
-.box form input {
-    width: 250px;
-    height: 25px;
-    border-radius: 10px;
-    padding: 0 15px 0 15px;
+.contentcontato p {
+    text-align: center;
+    font-size: 2rem;
+    width: 700px;
 }
-
-.box form button {
-    width: 150px;
-    height: 25px;
-}
-*/
