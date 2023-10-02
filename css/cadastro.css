@@ -61,3 +61,83 @@ html {
     border-bottom: 4px solid #d3a27f;
     color: #d3a27f;
 }
+
+/* Cadastro */
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #d3a27f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro {
+    background-color: #4b280a;
+    border-radius: 14px;
+    margin: 14px;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: 0 3px 5px rgba(0,0,0, 0.5);
+    overflow: hidden;
+}
+
+.titulo {
+    background: linear-gradient(0deg, #d3a27f 0%, #4b280a 100%);
+    padding: 24px;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+}
+
+.form {
+    padding: 18px;
+}
+
+.form-content {
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
+}
+
+.form-content label {
+    display: inline-block;
+    margin-bottom: 4px;
+    color: white;
+}
+
+.form-content input {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid white;
+}
+
+.form-content a {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+}
+
+.form button {
+    background-color: #d3a27f;
+    color: black;
+    width: 100%;
+    border-radius: 14px;
+    padding: 10px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 14px;
+}
+
+.form-content.error input {
+    border-color: red;
+}
+
+.form-content.error a {
+    color: red;
+}
