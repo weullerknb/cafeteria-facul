@@ -83,6 +83,10 @@ html {
     overflow: hidden;
 }
 
+.cadastro h1 {
+    font-size: 20px;
+}
+
 .titulo {
     background: linear-gradient(0deg, #d3a27f 0%, #4b280a 100%);
     padding: 24px;
@@ -105,6 +109,7 @@ html {
     display: inline-block;
     margin-bottom: 4px;
     color: white;
+    font-size: 15px;
 }
 
 .form-content input {
@@ -117,7 +122,7 @@ html {
 
 .form-content a {
     position: absolute;
-    bottom: -8px;
+    bottom: 1px;
     left: 0;
     visibility: hidden;
 }
@@ -140,4 +145,5 @@ html {
 
 .form-content.error a {
     color: red;
+    visibility: visible;
 }
