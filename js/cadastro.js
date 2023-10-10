@@ -7,12 +7,6 @@ const email = document.getElementById("email");
 const senha = document.getElementById("senha");
 const senhaConfirmacao = document.getElementById("senha-confirmacao");
 
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    checkForm();
-});
-
 nome.addEventListener("blur", () => {
     checkInputNome();
 });
@@ -139,7 +133,9 @@ function checkForm() {
     });
 
     if (isValid) {
+        cadastrar();
         alert("CADASTRADO COM SUCESSO");
+        limpar();
     };
 }
 
@@ -151,3 +147,42 @@ function errorInput(input, mensagem) {
 
     formItem.className = "form-content error";
 }
+
+function cadastrar() {
+
+    fetch("http://localhost:8080/usuarios",
+        {
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            method: "POST",
+            body: JSON.stringify({
+                nome: nome.value,
+                cpf: cpf.value,
+                nascimento: nascimento.value,
+                telefone: telefone.value,
+                email: email.value,
+                senha: senha.value
+            })
+        }
+    )
+    .then(function (res) { console.log(res) })
+    .catch(function (res) { console.log(res) })
+};
+
+function limpar() {
+    nome.value = "";
+    cpf.value = "";
+    nascimento.value = "";
+    telefone.value = "";
+    email.value = "";
+    senha.value = "";
+    senhaConfirmacao.value = ""; 
+}
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    checkForm();
+});
